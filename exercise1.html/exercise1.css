@@ -44,9 +44,9 @@ h4 {
 
 p {
     position: relative;
-    top: 15px;
+    top: 35px;
     padding-left: 60px;
     width: 320px;
-    font-size: 15px;
-    font-family: 'caslon';
+    font-size: 13px;
+    font-family: 'Libre Caslon Text', serif;
 }
