@@ -202,11 +202,36 @@ h2 {
 
 .p2 {
     position: absolute;
-    top: 505vh;
-    left: 560px;
+    top: 500vh;
+    left: 610px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
     font-weight: 400;
     z-index: 10001;
+    text-decoration: none;
+}
+
+.p4 {
+    position: absolute;
+    top: 510vh;
+    left: 640px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    z-index: 10001;
+    text-decoration: none;
+}
+
+.p4 :visited {
+    color: rgb(172, 172, 172);
+}
+
+.p4 :hover {
+    color: rgb(255, 193, 60);
+}
+
+.p4:active {
+    color: rgb(172, 172, 172);
 }
