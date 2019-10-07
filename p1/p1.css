@@ -8,7 +8,7 @@
 
 body {
     background-color: rgb(66, 66, 66);
-    height: 520vh;
+    height: 600vh;
 }
 
 h1 {
@@ -186,11 +186,10 @@ h2 {
 }
 
 .p3 {
-    width: 1110px;
-    height: 400px;
+    width: 400px;
     position: absolute;
     top: 400vh;
-    left: 150px;
+    left: 540px;
     /* bottom: 200px; */
     color: rgb(197, 197, 197);
     /* padding: 50px; */
@@ -202,8 +201,8 @@ h2 {
 
 .p2 {
     position: absolute;
-    top: 500vh;
-    left: 590px;
+    top: 545vh;
+    left: 580px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
