@@ -1,0 +1,252 @@
+/* reset padding and margins */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    height: 500vh;
+    background-color: #ece5d6;
+}
+
+/* container */
+
+.container {
+    position: relative;
+}
+
+/* items */
+
+.item {
+    height: 200px;
+    width: 410px;
+    background: rgb(33, 223, 90);
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+/* example element 1 */
+
+#element-1:hover {
+    transform: scale(0.2);
+    opacity: .3;
+}
+
+/* #element-1:active {
+    background: pink;
+    opacity: 1;
+} */
+
+/* example element 2 */
+
+#element-2:hover {
+    transform: skewY(20deg);
+    background-color: #300030;
+}
+
+
+
+/* example element 3 */
+#element-3 {
+    transition: none;
+}
+
+/* example element 4 */
+/* background: linear-gradient(blue, pink);
+    color: transparent; */
+#element-4 {
+    transition: none;
+}
+
+/* example element 5 */
+/* .circle {
+    border-radius: 125px;
+} */
+
+/* example element 6 */
+#element-5:hover {
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 213), rgb(182, 182, 182));
+}
+
+#element-6:hover {
+    transform: rotateY(130deg);
+    background-color: #ffb429;
+}
+
+#element-7:hover {
+    transform: rotate(45deg);
+    transform-origin: 20% 40%;
+}
+
+#element-8:hover {
+    transform: rotateY(80deg);
+    transform-style: preserve-3d;
+}
+
+#element-9:hover {
+    transform: rotateX(180deg);
+    transform-style: preserve-3d;
+}
+
+#element-10:hover {
+    transition: 2s;
+    width: 900px;
+}
+
+#element-11:hover {
+    background-color: #7DD4B2;
+    transition: 4s;
+    width: 1600px;
+    height: 900px;
+}
+
+#element-12:hover {
+    background-color: #BB413E;
+    transition: 1s;
+    border-radius: 50%;
+    transform: scale(0.2);
+}
+
+#element-13:active {
+    transform: rotate(120deg);
+}
+
+#element-14:hover {
+    transition: 2s;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(225, 240, 27);
+}
+
+#element-15:hover {
+
+    animation: element15Animation 1000ms ease-in 1;
+    animation-fill-mode: forwards;
+}
+
+#element-16 {
+    position: relative;
+    background: transparent;
+}
+
+#element-16:hover {
+
+    /* background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px);
+    background-size: 51px 51px;
+    background-position: -1px -1px; */
+    background: transparent;
+    transition: none;
+}
+
+#element-16 .square {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: black;
+    transition: all 100ms ease-in;
+}
+
+/* 
+#square1 {
+    top: 0;
+    left: 0;
+}
+
+#square2 {
+    top: 0;
+    left: 0;
+}
+
+#square3 {
+    top: 0;
+    left: 0;
+} */
+
+/* #square4 {} */
+
+#element-16:hover #square1 {
+    left: -200px;
+    top: 10vh;
+}
+
+#element-16:hover #square2 {
+    left: -300px;
+}
+
+#element-16:hover #square3 {
+    left: -300px;
+    top: 10vh;
+}
+
+
+
+
+@keyframes element15Animation {
+    0% {
+        border-radius: 0;
+        width: 410px;
+    }
+
+    50% {
+        border-radius: 50%;
+        width: 200px;
+    }
+
+    100% {}
+}
+
+
+
+#element-17.beenHovered {
+    animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-elliptic-top-fwd {
+    0% {
+        transform: translateY(-600px) rotateX(-30deg) scale(0);
+        transform: translateY(-600px) rotateX(-30deg) scale(0);
+        transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        transform-origin: 50% 1400px;
+        transform-origin: 50% 1400px;
+        opacity: 1;
+    }
+}
+
+#element-18:hover {
+    animation: flash 0.7s infinite;
+}
+
+@keyframes flash {
+
+    0% {
+        background: #ec4cec;
+    }
+
+    50% {
+        background: #ffbd42
+    }
+
+    100% {
+        background: rgb(114, 170, 255)
+    }
+}
+
+#element-19:hover {
+    background-color: #ffffff;
+
+}
