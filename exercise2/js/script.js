@@ -2,6 +2,9 @@ let element3 = document.querySelector("#element-3");
 let element4 = document.querySelector("#element-4");
 let element5 = document.querySelector("#element-5");
 let element6 = document.querySelector("#element-7");
+let element16 = document.querySelector('#element-16')
+let element17 = document.querySelector('#element-17')
+let element20 = document.querySelector('#element-20')
 
 
 
@@ -76,7 +79,6 @@ element4.addEventListener("click", function () {
 // });
 
 
-let element16 = document.querySelector('#element-16')
 
 let squares = []
 
@@ -111,7 +113,7 @@ element16.addEventListener('mouseleave', function () {
 })
 
 
-let element17 = document.querySelector('#element-17')
+
 
 
 
@@ -124,3 +126,57 @@ element17.addEventListener('mouseenter', function () {
     }, 700)
 
 })
+
+element20.addEventListener('mouseenter', function () {
+    element20.classList.add('beenHovered')
+
+
+    setTimeout(function () {
+        element20.classList.remove('beenHovered')
+    }, 1100)
+})
+
+
+let element21 = document.querySelector("#element-21");
+let element22 = document.querySelector("#element-22");
+let element23 = document.querySelector("#element-23");
+let element24 = document.querySelector("#element-24");
+
+element21.addEventListener("click", function () {
+    element21.animate(
+        [{
+                opacity: 0,
+                marginLeft: getComputedStyle(this).marginLeft,
+                fontSize: "100px",
+                borderWidth: getComputedStyle(this).borderWidth
+            },
+            {
+                opacity: 0.4,
+                marginLeft: "125px",
+                fontSize: "24px",
+                borderWidth: "10px"
+            }
+        ], {
+            duration: 200,
+            iterations: 1,
+            fill: "forwards"
+        }
+    );
+});
+
+element22.addEventListener("pointermove", function (e) {
+    var xPos = e.pageX - 125;
+    var yPos = e.pageY - 125;
+
+    this.style.position = "absolute";
+    this.style.top = yPos + "px";
+    this.style.left = xPos + "px";
+});
+
+element22.addEventListener("click", function () {
+    this.classList.add("gradient-background");
+});
+
+element23.addEventListener("click", function () {
+    this.nextElementSibling.classList.toggle("circle");
+});
