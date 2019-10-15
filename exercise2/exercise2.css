@@ -115,6 +115,7 @@ body {
 
 #element-13:active {
     transform: rotate(120deg);
+    background-color: #e46369;
 }
 
 #element-14:hover {
@@ -1031,12 +1032,6 @@ body {
         transform: rotate3d(1, 1, 0, -360deg);
     }
 }
-
-
-
-
-
-
 
 #element-50.hovered {
     background-image: url("../exercise2/flash3120.jpg");
