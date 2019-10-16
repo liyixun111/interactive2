@@ -1036,5 +1036,16 @@ body {
 #element-50 {
     overflow: scroll;
     size: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+span {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+#image {
+    margin: 0;
 }
