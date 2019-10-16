@@ -1033,6 +1033,8 @@ body {
     }
 }
 
-#element-50.hovered {
-    background-image: url("../exercise2/flash3120.jpg");
+#element-50 {
+    overflow: scroll;
+    size: 100%;
+    background-color: rgba(0, 0, 0, 0);
 }
