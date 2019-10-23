@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    height: 500vh;
+    background-color: #83676b;
+}
+
+
+#firstBox {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#firstBox:hover .circle {
+    width: 80px;
+    height: 80px;
+}
+
+
+.circle {
+    position: relative;
+    top: 20vh;
+    left: 510px;
+    width: 450px;
+    height: 450px;
+    background: none;
+}
+
+
+#CircleA {
+    position: relative;
+    top: 20vh;
+    left: 510px;
+    width: 450px;
+    height: 450px;
+    background: none;
+}
+
+.CircleB {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    background: rgb(20, 150, 59);
+    transform-origin: 50% 50%;
+    transition: 1200ms all;
+    border-radius: 50%;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: rgb(230, 203, 82);
+    transition: all 100ms ease-in;
+    border-radius: 50%;
+}
+
+.CircleC {
+    background: #BB413E;
+}
+
+.CircleB:hover .CircleB {
+    transition-delay: 200ms;
+    transform: scale(2) scale(.4) skewY(20deg);
+    /* background: transparent;
+    transition: none; */
+}
+
+
+/* .Circle:hover .Circle {
+    transform: scale(.5);
+} */
+
+
+
+#CircleA1 {
+    position: relative;
+    top: -40vh;
+    left: 410px;
+    width: 80px;
+    height: 80px;
+    background: none;
+
+}
+
+.CircleD {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    background: rgb(20, 150, 59);
+    transform-origin: 50% 50%;
+    transition: 1200ms all;
+    /* border-radius: 50%; */
+}
+
+.CircleE {
+    background: #BB413E;
+}
+
+.CircleD:hover .CircleD {
+    transition-delay: 200ms;
+    transform: rotate(720deg) scale(1.2);
+}

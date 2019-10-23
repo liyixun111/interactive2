@@ -1,0 +1,52 @@
+body {
+    height: 300vh;
+    background-color: #e9d9b8;
+    cursor: help;
+}
+
+
+
+
+.NetA {
+    top: 40vh;
+    position: relative;
+    background: transparent;
+    left: 210px;
+    width: 150px;
+    height: 150px;
+}
+
+.NetB {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    background: rgb(20, 150, 59);
+    transform-origin: 50% 50%;
+    transition: 1200ms all;
+    border-radius: 50%;
+}
+
+.NetC {
+    background: #BB413E;
+}
+
+.NetB:hover .NetB {
+    transition-delay: 200ms;
+    transform: scale(2) scale(.4) skewY(20deg);
+}
+
+.NetA:hover {
+    background: transparent;
+    transition: none;
+}
+
+.NetA .square {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: rgb(230, 203, 82);
+    transition: all 100ms ease-in;
+    border-radius: 50%;
+}

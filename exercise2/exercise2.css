@@ -164,14 +164,6 @@ body {
     background: transparent;
 }
 
-#element-16:hover {
-
-    /* background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px);
-    background-size: 51px 51px;
-    background-position: -1px -1px; */
-    background: transparent;
-    transition: none;
-}
 
 #element-16 .square {
     width: 40px;

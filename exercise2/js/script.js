@@ -130,6 +130,10 @@ element16.addEventListener('mouseenter', function () {
         // squares[counter].style.transform = 'rotate(' + r + 'deg)';
         // squares[counter].style.transform = 'scale(' + s + ')';
         squares[counter].style.transform = 'scale(' + s + ')' + 'rotate(' + r + 'deg)';
+
+
+
+
     }
 })
 element16.addEventListener('mouseleave', function () {
