@@ -15,8 +15,8 @@ for (let y = 0; y < 10; y++) {
         let square = document.createElement('div')
         square.classList.add('square')
 
-        square.style.top = y * 40 + 'px'
-        square.style.left = x * 40 + 'px'
+        square.style.top = y * 80 + 'px'
+        square.style.left = x * 80 + 'px'
 
         squareA.appendChild(square)
         squares.push(square)
@@ -70,7 +70,7 @@ for (let y = 0; y < 5; y++) {
 
 }
 
-squareB.addEventListener('mouseenter', function () {
+squareB.addEventListener('click', function () {
     for (let counter = 0; counter < squares1.length; counter++) {
 
         let x = Math.random() * 400 - 150;

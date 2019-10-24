@@ -1,5 +1,5 @@
 body {
-    height: 200vh;
+    height: 260vh;
     background-color: #e9d9b8;
     cursor: help;
 }
@@ -33,8 +33,8 @@ body {
 }
 
 #squareA {
-    top: -2vh;
-    left: -16vw;
+    top: -18vh;
+    left: -46vw;
     position: relative;
     background: transparent;
 }
@@ -47,20 +47,24 @@ body {
     background: rgb(230, 203, 82);
     transition: all 100ms ease-in;
     border-radius: 50%;
+    animation: box1aniB 2s ease-in-out infinite;
 }
 
 
 @keyframes box1aniB {
     0% {
-        transform: scale(.3)
+        /* transform: scale(.3); */
+        background-color: #2bad9c
     }
 
     50% {
-        transform: scale(1.7)
+        /* transform: scale(1.7); */
+        background-color: #ec794c
     }
 
     100% {
-        transform: scale(.3)
+        /* transform: scale(.3); */
+        background-color: #2bad9c;
     }
 }
 
@@ -89,7 +93,8 @@ body {
     position: relative;
     top: 80vh;
     background: transparent;
-    animation: box1aniA 1s infinite;
+    size: 100%;
+
 }
 
 
@@ -98,26 +103,30 @@ body {
     height: 40px;
     position: absolute;
     background: rgb(230, 203, 82);
-    transition: all 100ms ease-in;
+    transition: all 100ms ease-in-out;
 }
 
 .square2:hover {
-    transition: 4s;
+    animation: box1aniA 1s infinite;
+    transition: 1s;
     border-radius: 50%;
 }
 
 @keyframes box1aniA {
     0% {
         transform: rotate(-360deg);
-        opacity: 0;
+        /* background-color: #ec4c4c; */
+        /* opacity: 0; */
     }
 
-    /* 50% {
-        transform: translateX(-30px) skew(-20deg) scale(1.4)
-    } */
+    50% {
+        /* transform: translateX(-30px) skew(-20deg) scale(1.4);
+        background-color: #c1ec4c; */
+    }
 
     100% {
         transform: rotate(0);
-        opacity: 1;
+        /* background-color: #ec4c4c; */
+        /* opacity: 1; */
     }
 }
