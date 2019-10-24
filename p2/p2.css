@@ -1,5 +1,5 @@
 body {
-    height: 260vh;
+    height: 500vh;
     background-color: #e9d9b8;
     cursor: help;
 }
@@ -18,19 +18,6 @@ body {
     border-radius: 50%;
 }
 
-@keyframes box1ani {
-    0% {
-        background-color: #ec4c4c;
-    }
-
-    50% {
-        background-color: #c1ec4c;
-    }
-
-    100% {
-        background-color: #ec4c4c;
-    }
-}
 
 #squareA {
     top: -18vh;
@@ -71,27 +58,44 @@ body {
 
 #squareB {
     position: relative;
-    top: 50vh;
+    top: 220vh;
     background: transparent;
+    animation: box1ani 2s ease-in-out infinite;
 }
 
 
 #squareB .square1 {
-    animation: box1ani 2s ease-in-out infinite;
     width: 40px;
     height: 40px;
     position: absolute;
     background: rgb(230, 203, 82);
     transition: all 100ms ease-in;
-    animation: box1ani 2s ease-in-out infinite;
+
 }
 
 
+@keyframes box1ani {
+    0% {
+        /* background-color: #ec4c4c; */
+        transform: rotate(-360deg)
+    }
+
+    /* 50% {
+        background-color: #c1ec4c;
+        transform: rotate(0deg)
+    } */
+
+    100% {
+        /* background-color: #ec4c4c; */
+        transform: rotate(0deg)
+    }
+}
 
 
 #squareC {
     position: relative;
-    top: 80vh;
+    top: 320vh;
+    left: -14vw;
     background: transparent;
     size: 100%;
 
@@ -99,16 +103,16 @@ body {
 
 
 #squareC .square2 {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     position: absolute;
     background: rgb(230, 203, 82);
     transition: all 100ms ease-in-out;
+    animation: box1aniA 1s infinite;
 }
 
 .square2:hover {
-    animation: box1aniA 1s infinite;
-    transition: 1s;
+    transition: 1s ease-in-out;
     border-radius: 50%;
 }
 
