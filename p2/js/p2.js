@@ -45,6 +45,13 @@ squareA.addEventListener('mouseenter', function () {
 })
 squareA.addEventListener('mouseleave', function () {
     console.log('A-leave')
+
+    for (let i = 0; i < squareA.children.length; i++) {
+        squareA.children[i].style.transition = 'unset'
+        squareA.children[i].style.background = 'hsl(0deg,80%,' + Math.random() * 100 + '%)'
+        console.log('hsl(0deg,deg,0%,' + Math.random() * 100 + '%)')
+    }
+
 })
 
 
@@ -53,7 +60,7 @@ squareA.addEventListener('mouseleave', function () {
 
 let squares1 = []
 
-for (let y = 0; y < 10; y++) {
+for (let y = 0; y < 20; y++) {
 
     for (let x = 0; x < 20; x++) {
 
@@ -90,6 +97,12 @@ squareB.addEventListener('mouseenter', function () {
 })
 squareB.addEventListener('mouseleave', function () {
     console.log('B-leave')
+
+    for (let i = 0; i < squareB.children.length; i++) {
+        squareB.children[i].style.transition = 'unset'
+        squareB.children[i].style.background = 'hsl(' + Math.random() * 360 + 'deg,80%,50%)'
+
+    }
 })
 
 

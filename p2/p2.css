@@ -34,7 +34,7 @@ body {
     background: rgb(230, 203, 82);
     transition: all 100ms ease-in;
     border-radius: 50%;
-    animation: box1aniB 2s ease-in-out infinite;
+    /* animation: box1aniB 2s ease-in-out infinite; */
 }
 
 
@@ -58,9 +58,11 @@ body {
 
 #squareB {
     position: relative;
-    top: 220vh;
+    top: 160vh;
+    left: -14vw;
     background: transparent;
     animation: box1ani 2s ease-in-out infinite;
+    transform-origin: 100% 200%;
 }
 
 
@@ -70,6 +72,12 @@ body {
     position: absolute;
     background: rgb(230, 203, 82);
     transition: all 100ms ease-in;
+
+}
+
+.square1:hover {
+    transition: 10s ease-in-out;
+    /* background: #e41d5f !important; */
 
 }
 
@@ -114,6 +122,7 @@ body {
 .square2:hover {
     transition: 1s ease-in-out;
     border-radius: 50%;
+    background: #b30000 !important;
 }
 
 @keyframes box1aniA {
