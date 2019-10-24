@@ -1,29 +1,123 @@
 body {
-    /* margin: 0; */
-    height: 400vh;
-    /* background: #b4b4b4; */
+    height: 200vh;
+    background-color: #e9d9b8;
     cursor: help;
 }
 
 
-.ball {
+.box {
+    top: 20vh;
     position: relative;
-    z-index: 1000;
-}
-
-#pink {
-    width: 120px;
-    height: 120px;
+    height: 200px;
+    width: 410px;
+    color: white;
+    margin: 100px auto;
+    padding: 100px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
     border-radius: 50%;
-    background-color: rgba(184, 0, 0, 0.1);
-    /* position: relative; */
-    top: 10vh;
-    left: 200px;
 }
 
-body {
-    margin: 0;
-    height: 100vh;
-    background: #333333;
-    cursor: help;
+@keyframes box1ani {
+    0% {
+        background-color: #ec4c4c;
+    }
+
+    50% {
+        background-color: #c1ec4c;
+    }
+
+    100% {
+        background-color: #ec4c4c;
+    }
+}
+
+#squareA {
+    top: -2vh;
+    left: -16vw;
+    position: relative;
+    background: transparent;
+}
+
+
+#squareA .square {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background: rgb(230, 203, 82);
+    transition: all 100ms ease-in;
+    border-radius: 50%;
+}
+
+
+@keyframes box1aniB {
+    0% {
+        transform: scale(.3)
+    }
+
+    50% {
+        transform: scale(1.7)
+    }
+
+    100% {
+        transform: scale(.3)
+    }
+}
+
+
+#squareB {
+    position: relative;
+    top: 50vh;
+    background: transparent;
+}
+
+
+#squareB .square1 {
+    animation: box1ani 2s ease-in-out infinite;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: rgb(230, 203, 82);
+    transition: all 100ms ease-in;
+    animation: box1ani 2s ease-in-out infinite;
+}
+
+
+
+
+#squareC {
+    position: relative;
+    top: 80vh;
+    background: transparent;
+    animation: box1aniA 1s infinite;
+}
+
+
+#squareC .square2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: rgb(230, 203, 82);
+    transition: all 100ms ease-in;
+}
+
+.square2:hover {
+    transition: 4s;
+    border-radius: 50%;
+}
+
+@keyframes box1aniA {
+    0% {
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+
+    /* 50% {
+        transform: translateX(-30px) skew(-20deg) scale(1.4)
+    } */
+
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
 }

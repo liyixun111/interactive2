@@ -1,62 +1,158 @@
-document.addEventListener('mousemove', function (event) {
-
-    // console.log(event.pageX)
-    // console.log(event.pageY)
-
-
-    let brightness = (event.pageY / window.innerHeight) * 100
-    let hue = (event.pageX / window.innerWidth) * 360
-
-    let saturation = (Math.abs(event.movementX) / 10) * 100
+let squareA = document.querySelector("#squareA");
+let squareB = document.querySelector("#squareB");
+let squareC = document.querySelector("#squareC");
 
 
-    document.body.style.background = 'hsl(' + hue + ', ' + saturation + '%, ' + brightness + '%)'
 
 
+
+let squares = []
+
+for (let y = 0; y < 10; y++) {
+
+    for (let x = 0; x < 20; x++) {
+
+        let square = document.createElement('div')
+        square.classList.add('square')
+
+        square.style.top = y * 40 + 'px'
+        square.style.left = x * 40 + 'px'
+
+        squareA.appendChild(square)
+        squares.push(square)
+    }
+
+
+}
+
+squareA.addEventListener('mouseenter', function () {
+    for (let counter = 0; counter < squares.length; counter++) {
+
+        let x = Math.random() * 400 - 300;
+        let y = Math.random() * 200 - 150;
+        let s = Math.random() * .6;
+        let r = Math.random() * 360;
+
+        // squares[counter].style.transform = 'translate(' + x + 'px,' + y + 'px)' + 'scale(' + s + ')';
+        // squares[counter].style.transform = 'rotate(' + r + 'deg)';
+        // squares[counter].style.transform = 'scale(' + s + ')';
+        squares[counter].style.transform = 'scale(' + s + ')' + 'rotate(' + r + 'deg)';
+
+
+
+
+    }
+})
+squareA.addEventListener('mouseleave', function () {
+    console.log('A-leave')
 })
 
-let pink = document.querySelector('#pink')
-let pinkCount = 0
-
-pink.addEventListener('click', function () {
-    if (pinkCount % 3 == 0) {
 
 
 
 
-        console.log('zero')
-        let randomR = Math.random() * 255
-        let randomG = Math.random() * 255
-        let randomB = Math.random() * 255
-        pink.style.background = 'rgba(' + randomR + ',' + randomG + ',' + randomB + ',0.1)'
+let squares1 = []
 
-    } else if (pinkCount % 3 == 1) {
+for (let y = 0; y < 5; y++) {
 
+    for (let x = 0; x < 10; x++) {
 
+        let square1 = document.createElement('div')
+        square1.classList.add('square1')
 
-        console.log('one')
-        let randomWidth = 80 + Math.random() * 100
-        pink.style.width = randomWidth + 'px'
-        let randomHeight = 80 + Math.random() * 100
-        pink.style.width = randomHeight + 'px'
+        square1.style.top = y * 40 + 'px'
+        square1.style.left = x * 40 + 'px'
 
-    } else if (pinkCount % 3 == 2) {
+        squareB.appendChild(square1)
+        squares1.push(square1)
+    }
 
 
+}
 
-        console.log('two')
+squareB.addEventListener('mouseenter', function () {
+    for (let counter = 0; counter < squares1.length; counter++) {
 
-        pink.style.marginTop = Math.random() * 250 + 'px'
-        pink.style.marginLeft = Math.random() * 250 + 'px'
+        let x = Math.random() * 400 - 150;
+        let y = Math.random() * 200 - 100;
+        let s = Math.random() * .2;
+        let r = Math.random() * 360;
+
+        squares1[counter].style.transform = 'translate(' + x + 'px,' + y + 'px)' + 'scale(' + s + ')';
+        // squares[counter].style.transform = 'rotate(' + r + 'deg)';
+        // squares[counter].style.transform = 'scale(' + s + ')';
+        // squares[counter].style.transform = 'scale(' + s + ')' + 'rotate(' + r + 'deg)';
+
+
+
+
+    }
+})
+squareB.addEventListener('mouseleave', function () {
+    console.log('B-leave')
+})
+
+
+
+
+let squares2 = []
+
+
+for (let y = 0; y < 5; y++) {
+
+    for (let x = 0; x < 10; x++) {
+
+        let square2 = document.createElement('div')
+        square2.classList.add('square2')
+
+        square2.style.top = y * 40 + 'px'
+        square2.style.left = x * 40 + 'px'
+
+        squareC.appendChild(square2)
+        squares2.push(square2)
+    }
+
+
+}
+
+
+
+squareC.addEventListener('mouseenter', function () {
+    for (let counter = 0; counter < squares2.length; counter++) {
+
+        let x = Math.random() * 400 - 300;
+        let y = Math.random() * 200 - 150;
+        let s = Math.random() * 2;
+        let r = Math.random() * 360;
+
+        // squares1[counter].style.transform = 'translate(' + x + 'px,' + y + 'px)' + 'scale(' + s + ')';
+        squares2[counter].style.transform = 'rotate(' + r + 'deg)' + 'translate(' + x + 'px,' + y + 'px)' + 'scale(' + s + ')';
+        // squares[counter].style.transform = 'scale(' + s + ')';
+        // squares[counter].style.transform = 'scale(' + s + ')' + 'rotate(' + r + 'deg)';
+
+
 
 
     }
 
-    pinkCount = pinkCount + 1
-
-
-    console.log(pinkCount)
-
-
-
 })
+squareC.addEventListener('mouseleave', function () {
+    console.log('C-leave')
+})
+
+
+
+
+
+
+// squareC.addEventListener('mousewheel', function (event) {
+
+
+//     chadZoom += event.deltaY / 10
+
+//     squareC.style.background = 'hsl(' + chadZoom + ', 100%, 50%)'
+
+//     event.preventDefault()
+//     event.stopPropagation()
+
+// })
