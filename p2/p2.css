@@ -34,6 +34,7 @@ body {
     background: rgb(230, 203, 82);
     transition: all 100ms ease-in;
     border-radius: 50%;
+    /* background-image: url(../p2/flash3120.jpg); */
     /* animation: box1aniB 2s ease-in-out infinite; */
 }
 
@@ -61,7 +62,7 @@ body {
     top: 160vh;
     left: -14vw;
     background: transparent;
-    animation: box1ani 2s ease-in-out infinite;
+    animation: box1ani 2s linear infinite;
     transform-origin: 100% 200%;
 }
 
@@ -71,13 +72,16 @@ body {
     height: 40px;
     position: absolute;
     background: rgb(230, 203, 82);
-    transition: all 100ms ease-in;
+    transition: all 10s linear;
 
 }
 
 .square1:hover {
     transition: 10s ease-in-out;
     /* background: #e41d5f !important; */
+
+    /* background: url(flash3120.jpg) no-repeat center center;
+    background-size: 40px 40px; */
 
 }
 
