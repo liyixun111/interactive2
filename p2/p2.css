@@ -20,7 +20,7 @@ body {
 
 
 #squareA {
-    top: -18vh;
+    top: 400vh;
     left: -46vw;
     position: relative;
     background: transparent;
@@ -59,7 +59,7 @@ body {
 
 #squareB {
     position: relative;
-    top: 160vh;
+    top: 120vh;
     left: -14vw;
     background: transparent;
     animation: box1ani 2s linear infinite;
@@ -78,6 +78,7 @@ body {
 
 .square1:hover {
     transition: 10s ease-in-out;
+    cursor: s-resize;
     /* background: #e41d5f !important; */
 
     /* background: url(flash3120.jpg) no-repeat center center;
@@ -88,17 +89,11 @@ body {
 
 @keyframes box1ani {
     0% {
-        /* background-color: #ec4c4c; */
         transform: rotate(-360deg)
     }
 
-    /* 50% {
-        background-color: #c1ec4c;
-        transform: rotate(0deg)
-    } */
 
     100% {
-        /* background-color: #ec4c4c; */
         transform: rotate(0deg)
     }
 }
@@ -106,7 +101,7 @@ body {
 
 #squareC {
     position: relative;
-    top: 320vh;
+    top: -76vh;
     left: -14vw;
     background: transparent;
     size: 100%;
@@ -127,23 +122,164 @@ body {
     transition: 1s ease-in-out;
     border-radius: 50%;
     background: #b30000 !important;
+    cursor: s-resize;
 }
 
 @keyframes box1aniA {
     0% {
         transform: rotate(-360deg);
-        /* background-color: #ec4c4c; */
-        /* opacity: 0; */
-    }
-
-    50% {
-        /* transform: translateX(-30px) skew(-20deg) scale(1.4);
-        background-color: #c1ec4c; */
     }
 
     100% {
         transform: rotate(0);
-        /* background-color: #ec4c4c; */
-        /* opacity: 1; */
     }
+}
+
+
+.arrow {
+    top: 20vh;
+    left: 40vw;
+    position: relative;
+    /* margin: 100px auto; */
+    /* padding: 100px; */
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    /* border-radius: 50%; */
+}
+
+
+#N1 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -76vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N2 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -76vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N3 {
+    background: rgba(230, 203, 82, 0);
+    position: relative;
+    top: -76vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N6 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -84vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N4 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -79.7vh;
+    left: 6.2vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N5 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -83.4vh;
+    left: 9.8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+
+
+
+
+
+.arrow2 {
+    top: 240vh;
+    left: 40vw;
+    position: relative;
+    /* margin: 100px auto; */
+    /* padding: 100px; */
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    /* border-radius: 50%; */
+}
+
+#N7 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -76.1vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N8 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -76vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N9 {
+    background: rgba(230, 203, 82, 0);
+    position: relative;
+    top: -76vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N10 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -76vh;
+    left: 8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N11 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -83.4vh;
+    left: 6.2vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
+}
+
+#N12 {
+    background: rgb(230, 203, 82);
+    position: relative;
+    top: -87.2vh;
+    left: 9.8vw;
+    height: 26px;
+    width: 26px;
+    animation: box1aniA 1s infinite;
 }

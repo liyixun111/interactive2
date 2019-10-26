@@ -98,10 +98,15 @@ squareB.addEventListener('mouseenter', function () {
 squareB.addEventListener('mouseleave', function () {
     console.log('B-leave')
 
+    // for (let i = 0; i < squareB.children.length; i++) {
+    //     squareB.children[i].style.transition = 'unset'
+    //     squareB.children[i].style.background = 'hsl(' + Math.random() * 360 + 'deg,80%,50%)'
+
+
     for (let i = 0; i < squareB.children.length; i++) {
         squareB.children[i].style.transition = 'unset'
-        squareB.children[i].style.background = 'hsl(' + Math.random() * 360 + 'deg,80%,50%)'
-
+        squareB.children[i].style.background = 'hsl(0deg,80%,' + Math.random() * 100 + '%)'
+        console.log('hsl(0deg,deg,0%,' + Math.random() * 100 + '%)')
     }
 })
 
