@@ -45,31 +45,42 @@ function getTime() {
 
     // detect if its a minute divisible by 5
 
-    if (m < 20) {
+    if (m < 10) {
         zom.classList.remove('zomTwo')
         zom.classList.remove('zomThree')
         zom.classList.remove('zomFour')
         zom.classList.remove('zomFive')
-    } else if (m < 30) {
+        zom.classList.remove('zomSix')
+    } else if (m < 20) {
         zom.classList.add('zomTwo')
         zom.classList.remove('zomThree')
         zom.classList.remove('zomFour')
         zom.classList.remove('zomFive')
-    } else if (m < 40) {
+        zom.classList.remove('zomSix')
+    } else if (m < 30) {
         zom.classList.add('zomThree')
         zom.classList.remove('zomTwo')
         zom.classList.remove('zomFour')
         zom.classList.remove('zomFive')
-    } else if (m < 50) {
+        zom.classList.remove('zomSix')
+    } else if (m < 40) {
         zom.classList.add('zomFour')
         zom.classList.remove('zomTwo')
         zom.classList.remove('zomThree')
         zom.classList.remove('zomFive')
-    } else if (m < 60) {
+        zom.classList.remove('zomSix')
+    } else if (m < 50) {
         zom.classList.add('zomFive')
         zom.classList.remove('zomTwo')
         zom.classList.remove('zomThree')
         zom.classList.remove('zomFour')
+        zom.classList.remove('zomSix')
+    } else if (m < 60) {
+        zom.classList.add('zomSix')
+        zom.classList.remove('zomTwo')
+        zom.classList.remove('zomThree')
+        zom.classList.remove('zomFour')
+        zom.classList.remove('zomFive')
     } else {
         zom.classList.add('zomThree')
         zom.classList.remove('zomTwo')

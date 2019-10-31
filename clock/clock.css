@@ -33,6 +33,10 @@ body {
     display: none;
 }
 
+#zom .six {
+    display: none;
+}
+
 /* two */
 
 #zom.zomTwo .two {
@@ -99,6 +103,24 @@ body {
     z-index: 1000;
     display: block;
 }
+
+/* six */
+
+#zom.zomSix .one {
+    display: none;
+}
+
+#zom.zomSix .six {
+    position: relative;
+    width: 110%;
+    height: 110%;
+    top: 0vh;
+    left: -2vw;
+    z-index: 1000;
+    display: block;
+}
+
+
 
 #sun {
     position: relative;
