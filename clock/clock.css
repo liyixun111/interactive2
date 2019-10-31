@@ -1,0 +1,116 @@
+body {
+    background: black;
+    color: white;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    min-height: 100vh;
+}
+
+#zom {
+    position: relative;
+    top: 40vh;
+    left: 3vw;
+    z-index: 1000;
+}
+
+
+#zom .two {
+    display: none;
+}
+
+#zom .three {
+    display: none;
+}
+
+#zom .four {
+    display: none;
+}
+
+#zom .five {
+    display: none;
+}
+
+/* two */
+
+#zom.zomTwo .two {
+    position: relative;
+    top: -10vh;
+    left: 1vw;
+    z-index: 1000;
+    display: block;
+}
+
+#zom.zomTwo .one {
+    display: none;
+}
+
+#zom .four {
+    display: none;
+}
+
+/* three */
+
+#zom.zomThree .one {
+    display: none;
+}
+
+#zom .four {
+    display: none;
+}
+
+#zom.zomThree .three {
+    position: relative;
+    top: -4vh;
+    left: -2vw;
+    z-index: 1000;
+    display: block;
+}
+
+/* four */
+
+#zom.zomFour .one {
+    display: none;
+}
+
+
+#zom.zomFour .four {
+    position: relative;
+    top: -4vh;
+    left: -2vw;
+    z-index: 1000;
+    display: block;
+}
+
+/* five */
+
+#zom.zomFive .one {
+    display: none;
+}
+
+#zom.zomFive .five {
+    position: relative;
+    width: 180%;
+    height: 180%;
+    top: 0vh;
+    left: -2vw;
+    z-index: 1000;
+    display: block;
+}
+
+#sun {
+    position: relative;
+    top: -2vh;
+    left: -3vw;
+    z-index: 999;
+}
+
+#time {
+    position: relative;
+    top: -80vh;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    font-weight: 600;
+}
