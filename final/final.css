@@ -193,6 +193,8 @@ body {
     column-gap: 40px;
 }
 
+
+/* cloud */
 .P1 {
     position: absolute;
     top: 90vh;
@@ -279,9 +281,12 @@ body {
     opacity: 1;
 }
 
+
+
+/* Boides */
 .P3 {
     position: absolute;
-    top: 300vh;
+    top: 320vh;
     right: 4vw;
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
@@ -291,12 +296,12 @@ body {
 }
 
 #text2 {
-    top: 340vh;
+    top: 360vh;
 }
 
 .pg2 {
     position: absolute;
-    top: 368vh;
+    top: 388vh;
     left: 4vw;
     width: 210px;
     height: 210px;
@@ -351,7 +356,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 302vh;
+    top: 322vh;
     left: 4vw;
 }
 
@@ -359,7 +364,7 @@ body {
 /* Aerocene */
 .P4 {
     position: absolute;
-    top: 440vh;
+    top: 470vh;
     right: 18vw;
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
@@ -369,12 +374,12 @@ body {
 }
 
 #text3 {
-    top: 470vh;
+    top: 500vh;
 }
 
 .pg3 {
     position: absolute;
-    top: 508vh;
+    top: 538vh;
     left: 4vw;
     width: 210px;
     height: 210px;
@@ -429,7 +434,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 442vh;
+    top: 472vh;
     left: 4vw;
 }
 
@@ -437,7 +442,7 @@ body {
 /*  14 billions */
 .P5 {
     position: absolute;
-    top: 580vh;
+    top: 620vh;
     right: 31vw;
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
@@ -447,12 +452,12 @@ body {
 }
 
 #text4 {
-    top: 610vh;
+    top: 650vh;
 }
 
 .pg4 {
     position: absolute;
-    top: 648vh;
+    top: 688vh;
     left: 4vw;
     width: 210px;
     height: 210px;
@@ -507,6 +512,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 582vh;
+    top: 622vh;
     left: 4vw;
 }
