@@ -1,0 +1,512 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    perspective: 1000px;
+    perspective-origin: 50vw 50vh;
+    background-color: #C7C6C6;
+    height: 1200vh;
+
+}
+
+.link:visited {
+    text-decoration: none;
+    color: #1d1d1b;
+    opacity: 0.6;
+}
+
+.link:link {
+    text-decoration: none;
+}
+
+
+#cube {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 1, 1, 45deg);
+    transform-origin: 50% 50% 100px;
+
+    left: calc(50vw - 100px);
+    top: calc(50vh - 100px);
+    transition: transform 100ms ease;
+    animation: cubeRotationThree 10s infinite;
+}
+
+#cube.stop {
+    animation: none;
+}
+
+@keyframes cubeRotationThree {
+    0% {
+        transform: rotate3d(8, 8, 8, 0deg)
+    }
+
+    50% {
+        transform: rotate3d(-8, -8, 8, 1080deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 8, 8, 0deg);
+    }
+}
+
+
+.face {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: 50% 50% 100px;
+    /*   opacity:0.5; */
+}
+
+/* .face:hover {
+    background: black;
+    background-image: url(../final/final/1.jpg);
+    background-size: cover;
+} */
+
+#one.active {
+    background: black;
+    background-image: url(../final/final/7.jpg);
+    background-size: cover;
+}
+
+#two.active {
+    background: black;
+    background-image: url(../final/final/14.jpg);
+    background-size: cover;
+}
+
+#three.active {
+    background: black;
+    background-image: url(../final/final/16.jpg);
+    background-size: cover;
+}
+
+#four.active {
+    background: black;
+    background-image: url(../final/final/29.jpg);
+    background-size: cover;
+}
+
+#five.active {
+    background: black;
+    background-image: url(../final/final/41.jpg);
+    background-size: cover;
+}
+
+#six.active {
+    background: black;
+    background-image: url(../final/final/27.jpg);
+    background-size: cover;
+}
+
+#two {
+    /*   background:pink; */
+    transform: rotateY(-90deg);
+}
+
+#three {
+    /*   background:red; */
+    transform: rotateY(90deg);
+}
+
+#four {
+    /*   background:blue; */
+    transform: rotateY(180deg);
+}
+
+#five {
+    /*   background:purple; */
+    transform: rotateX(-90deg);
+}
+
+#six {
+    /*   background:cyan; */
+    transform: rotateX(-90deg);
+}
+
+
+
+
+.title {
+    position: absolute;
+    color: #1d1d1b;
+    opacity: 0.6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}
+
+.title:hover {
+    opacity: 1;
+}
+
+#T1 {
+    top: 16vh;
+    left: 4vw;
+}
+
+#T2 {
+    top: 46vh;
+    left: 4vw;
+}
+
+#T3 {
+    top: 76vh;
+    left: 4vw;
+}
+
+#T4 {
+    top: 16vh;
+    right: 4vw;
+    text-align: right;
+}
+
+#T5 {
+    top: 46vh;
+    right: 4vw;
+    text-align: right;
+}
+
+#T6 {
+    top: 76vh;
+    right: 4vw;
+    text-align: right;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: .4em;
+    color: rgb(255, 255, 255);
+    width: 46%;
+    column-count: 2;
+    right: 4vw;
+    letter-spacing: .5px;
+    column-gap: 40px;
+}
+
+.P1 {
+    position: absolute;
+    top: 90vh;
+    left: 44vw;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(136, 15, 15);
+}
+
+.P2 {
+    position: absolute;
+    top: 170vh;
+    right: 17vw;
+    font-family: 'avenir', sans-serif;
+    font-size: 3.4em;
+    font-weight: bold;
+    color: #1d1d1b;
+    /* line-height: .2; */
+}
+
+#text1 {
+    top: 210vh;
+}
+
+.pg1 {
+    position: absolute;
+    top: 238vh;
+    left: 4vw;
+    width: 210px;
+    height: 210px;
+}
+
+#img1 {
+    background-image: url(../final/final/1.jpg);
+    background-size: cover;
+}
+
+#img2 {
+    background-image: url(../final/final/2.jpg);
+    background-size: cover;
+    left: 19vw;
+}
+
+#img3 {
+    background-image: url(../final/final/3.jpg);
+    background-size: cover;
+    left: 34vw;
+}
+
+#img4 {
+    background-image: url(../final/final/4.jpg);
+    background-size: cover;
+    left: 49vw;
+}
+
+#img5 {
+    background-image: url(../final/final/5.jpg);
+    background-size: cover;
+    left: 64vw;
+}
+
+#img6 {
+    background-image: url(../final/final/6.jpg);
+    background-size: cover;
+    left: 79vw;
+}
+
+#bigImage {
+    width: 640px;
+    height: 440px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 172vh;
+    left: 4vw;
+}
+
+.hasBeenSelected .pg1 {
+    opacity: 0.3;
+}
+
+.currentlySelected.pg1 {
+    opacity: 1;
+}
+
+.P3 {
+    position: absolute;
+    top: 300vh;
+    right: 4vw;
+    font-family: 'avenir', sans-serif;
+    font-size: 3.4em;
+    font-weight: bold;
+    color: #1d1d1b;
+    /* line-height: .2; */
+}
+
+#text2 {
+    top: 340vh;
+}
+
+.pg2 {
+    position: absolute;
+    top: 368vh;
+    left: 4vw;
+    width: 210px;
+    height: 210px;
+}
+
+#img8 {
+    background-image: url(../final/final/8.jpg);
+    background-size: cover;
+}
+
+#img9 {
+    background-image: url(../final/final/9.jpg);
+    background-size: cover;
+    left: 19vw;
+}
+
+#img10 {
+    background-image: url(../final/final/10.jpg);
+    background-size: cover;
+    left: 34vw;
+}
+
+#img11 {
+    background-image: url(../final/final/11.jpg);
+    background-size: cover;
+    left: 49vw;
+}
+
+#img12 {
+    background-image: url(../final/final/12.jpg);
+    background-size: cover;
+    left: 64vw;
+}
+
+#img13 {
+    background-image: url(../final/final/13.jpg);
+    background-size: cover;
+    left: 79vw;
+}
+
+.hasBeenSelected .pg2 {
+    opacity: 0.3;
+}
+
+.currentlySelected.pg2 {
+    opacity: 1;
+}
+
+#bigImage2 {
+    width: 640px;
+    height: 440px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 302vh;
+    left: 4vw;
+}
+
+
+/* Aerocene */
+.P4 {
+    position: absolute;
+    top: 440vh;
+    right: 18vw;
+    font-family: 'avenir', sans-serif;
+    font-size: 3.4em;
+    font-weight: bold;
+    color: #1d1d1b;
+    /* line-height: .2; */
+}
+
+#text3 {
+    top: 470vh;
+}
+
+.pg3 {
+    position: absolute;
+    top: 508vh;
+    left: 4vw;
+    width: 210px;
+    height: 210px;
+}
+
+#img15 {
+    background-image: url(../final/final/15.jpg);
+    background-size: cover;
+}
+
+#img16 {
+    background-image: url(../final/final/16.jpg);
+    background-size: cover;
+    left: 19vw;
+}
+
+#img17 {
+    background-image: url(../final/final/17.jpg);
+    background-size: cover;
+    left: 34vw;
+}
+
+#img18 {
+    background-image: url(../final/final/18.jpg);
+    background-size: cover;
+    left: 49vw;
+}
+
+#img19 {
+    background-image: url(../final/final/19.jpg);
+    background-size: cover;
+    left: 64vw;
+}
+
+#img20 {
+    background-image: url(../final/final/20.jpg);
+    background-size: cover;
+    left: 79vw;
+}
+
+.hasBeenSelected .pg3 {
+    opacity: 0.3;
+}
+
+.currentlySelected.pg3 {
+    opacity: 1;
+}
+
+#bigImage3 {
+    width: 640px;
+    height: 440px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 442vh;
+    left: 4vw;
+}
+
+
+/*  14 billions */
+.P5 {
+    position: absolute;
+    top: 580vh;
+    right: 31vw;
+    font-family: 'avenir', sans-serif;
+    font-size: 3.4em;
+    font-weight: bold;
+    color: #1d1d1b;
+    /* line-height: .2; */
+}
+
+#text4 {
+    top: 610vh;
+}
+
+.pg4 {
+    position: absolute;
+    top: 648vh;
+    left: 4vw;
+    width: 210px;
+    height: 210px;
+}
+
+#img30 {
+    background-image: url(../final/final/30.jpg);
+    background-size: cover;
+}
+
+#img31 {
+    background-image: url(../final/final/31.jpg);
+    background-size: cover;
+    left: 19vw;
+}
+
+#img32 {
+    background-image: url(../final/final/32.jpg);
+    background-size: cover;
+    left: 34vw;
+}
+
+#img33 {
+    background-image: url(../final/final/33.jpg);
+    background-size: cover;
+    left: 49vw;
+}
+
+#img34 {
+    background-image: url(../final/final/34.jpg);
+    background-size: cover;
+    left: 64vw;
+}
+
+#img35 {
+    background-image: url(../final/final/35.jpg);
+    background-size: cover;
+    left: 79vw;
+}
+
+.hasBeenSelected .pg4 {
+    opacity: 0.3;
+}
+
+.currentlySelected.pg4 {
+    opacity: 1;
+}
+
+#bigImage4 {
+    width: 640px;
+    height: 440px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 582vh;
+    left: 4vw;
+}
