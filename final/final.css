@@ -34,7 +34,7 @@ body {
     left: calc(50vw - 100px);
     top: calc(50vh - 100px);
     transition: transform 100ms ease;
-    animation: cubeRotationThree 10s infinite;
+    animation: cubeRotationThree 16s infinite;
 }
 
 #cube.stop {
@@ -150,6 +150,18 @@ body {
     opacity: 1;
 }
 
+/* .title a:visited {
+    text-decoration: none;
+    color: #1d1d1b;
+    opacity: 0.6;
+} */
+
+.homeTitle {
+    z-index: 1000000;
+}
+
+
+
 #T1 {
     top: 16vh;
     left: 4vw;
@@ -187,7 +199,7 @@ body {
     position: absolute;
     font-family: 'Cormorant Garamond', serif;
     font-size: .4em;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     width: 46%;
     column-count: 2;
     right: 4vw;
@@ -228,6 +240,10 @@ body {
     left: 4vw;
     width: 210px;
     height: 210px;
+}
+
+.pg1:hover {
+    cursor: pointer;
 }
 
 #img1 {
@@ -309,6 +325,10 @@ body {
     height: 210px;
 }
 
+.pg2:hover {
+    cursor: pointer;
+}
+
 #img8 {
     background-image: url(../final/final/8.jpg);
     background-size: cover;
@@ -387,6 +407,10 @@ body {
     height: 210px;
 }
 
+.pg3:hover {
+    cursor: pointer;
+}
+
 #img15 {
     background-image: url(../final/final/15.jpg);
     background-size: cover;
@@ -463,6 +487,10 @@ body {
     left: 4vw;
     width: 210px;
     height: 210px;
+}
+
+.pg4:hover {
+    cursor: pointer;
 }
 
 #img30 {

@@ -43,8 +43,8 @@ document.addEventListener('mousemove', function (event) {
     // console.log('rotate3d(' + xAmount + ',' + yAmount + ',0,' + turnAmount + 'deg)')
 })
 
-let titles = document.querySelectorAll('.title')
-
+let titles = document.querySelectorAll('.homeTitle')
+console.log(titles)
 
 let lookPositions = [
     'rotate3d(0, 1, 0, 180deg)',
@@ -63,6 +63,7 @@ for (let counter = 0; counter < titles.length; counter++) {
         }, 32)
         faces[counter].classList.add('active')
         cube.classList.add('stop')
+        console.log(counter)
     })
     titles[counter].addEventListener('mouseleave', function () {
         cube.style.transform = 'rotate3d(1, 1, 1, 45deg)'
