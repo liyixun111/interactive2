@@ -13,6 +13,12 @@ let bigImage3 = document.querySelector('#bigImage3')
 let thumbnails4 = document.querySelectorAll('.pg4')
 let bigImage4 = document.querySelector('#bigImage4')
 
+let thumbnails5 = document.querySelectorAll('.pg5')
+let bigImage5 = document.querySelector('#bigImage5')
+
+let thumbnails6 = document.querySelectorAll('.pg6')
+let bigImage6 = document.querySelector('#bigImage6')
+
 
 document.addEventListener('mousemove', function (event) {
 
@@ -84,6 +90,9 @@ for (let counter = 0; counter < thumbnails.length; counter++) {
         bigImage.style.backgroundImage = getComputedStyle(thumbnails[counter]).backgroundImage
     })
 
+    thumbnails[0].classList.add('currentlySelected')
+    bigImage.style.backgroundImage = getComputedStyle(thumbnails[0]).backgroundImage
+    document.body.classList.add('hasBeenSelected')
 }
 
 
@@ -91,42 +100,85 @@ for (let counter = 0; counter < thumbnails.length; counter++) {
 
 for (let counter = 0; counter < thumbnails2.length; counter++) {
     thumbnails2[counter].addEventListener('click', function () {
-        document.body.classList.add('hasBeenSelected')
-        let previousSelection = document.querySelector('.currentlySelected')
+        document.body.classList.add('hasBeenSelected2')
+        let previousSelection = document.querySelector('.currentlySelected2')
         if (previousSelection) {
-            previousSelection.classList.remove('currentlySelected')
+            previousSelection.classList.remove('currentlySelected2')
         }
 
-        thumbnails2[counter].classList.add('currentlySelected')
+        thumbnails2[counter].classList.add('currentlySelected2')
         bigImage2.style.backgroundImage = getComputedStyle(thumbnails2[counter]).backgroundImage
     })
 
+    thumbnails2[0].classList.add('currentlySelected2')
+    bigImage2.style.backgroundImage = getComputedStyle(thumbnails2[0]).backgroundImage
+    document.body.classList.add('hasBeenSelected2')
 }
 
 for (let counter = 0; counter < thumbnails3.length; counter++) {
     thumbnails3[counter].addEventListener('click', function () {
-        document.body.classList.add('hasBeenSelected')
-        let previousSelection = document.querySelector('.currentlySelected')
+        document.body.classList.add('hasBeenSelected3')
+        let previousSelection = document.querySelector('.currentlySelected3')
         if (previousSelection) {
-            previousSelection.classList.remove('currentlySelected')
+            previousSelection.classList.remove('currentlySelected3')
         }
 
-        thumbnails3[counter].classList.add('currentlySelected')
+        thumbnails3[counter].classList.add('currentlySelected3')
         bigImage3.style.backgroundImage = getComputedStyle(thumbnails3[counter]).backgroundImage
     })
 
+    thumbnails3[0].classList.add('currentlySelected3')
+    bigImage3.style.backgroundImage = getComputedStyle(thumbnails3[0]).backgroundImage
+    document.body.classList.add('hasBeenSelected3')
 }
 
 for (let counter = 0; counter < thumbnails4.length; counter++) {
     thumbnails4[counter].addEventListener('click', function () {
-        document.body.classList.add('hasBeenSelected')
-        let previousSelection = document.querySelector('.currentlySelected')
+        document.body.classList.add('hasBeenSelected4')
+        let previousSelection = document.querySelector('.currentlySelected4')
         if (previousSelection) {
-            previousSelection.classList.remove('currentlySelected')
+            previousSelection.classList.remove('currentlySelected4')
         }
 
-        thumbnails4[counter].classList.add('currentlySelected')
+        thumbnails4[counter].classList.add('currentlySelected4')
         bigImage4.style.backgroundImage = getComputedStyle(thumbnails4[counter]).backgroundImage
     })
 
+    thumbnails4[0].classList.add('currentlySelected4')
+    bigImage4.style.backgroundImage = getComputedStyle(thumbnails4[0]).backgroundImage
+    document.body.classList.add('hasBeenSelected4')
+}
+
+for (let counter = 0; counter < thumbnails5.length; counter++) {
+    thumbnails5[counter].addEventListener('click', function () {
+        document.body.classList.add('hasBeenSelected5')
+        let previousSelection = document.querySelector('.currentlySelected5')
+        if (previousSelection) {
+            previousSelection.classList.remove('currentlySelected5')
+        }
+
+        thumbnails5[counter].classList.add('currentlySelected5')
+        bigImage5.style.backgroundImage = getComputedStyle(thumbnails5[counter]).backgroundImage
+    })
+
+    thumbnails5[0].classList.add('currentlySelected5')
+    bigImage5.style.backgroundImage = getComputedStyle(thumbnails5[0]).backgroundImage
+    document.body.classList.add('hasBeenSelected5')
+}
+
+for (let counter = 0; counter < thumbnails6.length; counter++) {
+    thumbnails6[counter].addEventListener('click', function () {
+        document.body.classList.add('hasBeenSelected6')
+        let previousSelection = document.querySelector('.currentlySelected6')
+        if (previousSelection) {
+            previousSelection.classList.remove('currentlySelected6')
+        }
+
+        thumbnails6[counter].classList.add('currentlySelected6')
+        bigImage6.style.backgroundImage = getComputedStyle(thumbnails6[counter]).backgroundImage
+    })
+
+    thumbnails6[0].classList.add('currentlySelected6')
+    bigImage6.style.backgroundImage = getComputedStyle(thumbnails6[0]).backgroundImage
+    document.body.classList.add('hasBeenSelected6')
 }
