@@ -13,7 +13,43 @@ body {
 .top {
     color: #C7C6C6;
     top: 0px;
+    position: absolute;
+    color: #1d1d1b;
+    opacity: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
 }
+
+#top1 {
+    top: 168vh;
+    opacity: .6;
+}
+
+#top2 {
+    top: 318vh;
+    opacity: .6;
+}
+
+#top3 {
+    top: 468vh;
+    opacity: .6;
+}
+
+#top4 {
+    top: 618vh;
+    opacity: .6;
+}
+
+#top5 {
+    top: 768vh;
+    opacity: .6;
+}
+
+#top6 {
+    top: 918vh;
+    opacity: .6;
+}
+
 
 .link:visited {
     text-decoration: none;
@@ -39,7 +75,7 @@ body {
     left: calc(50vw - 100px);
     top: calc(50vh - 100px);
     transition: transform 100ms ease;
-    animation: cubeRotationThree 16s infinite;
+    animation: cubeRotationThree 66s infinite;
 }
 
 #cube.stop {
@@ -148,7 +184,7 @@ body {
     color: #1d1d1b;
     opacity: 0.6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 .title:hover {
@@ -202,7 +238,6 @@ body {
     color: #ffffff;
     width: 34%;
     /* column-count: 2; */
-    left: 56vw;
     letter-spacing: .5px;
     column-gap: 40px;
 }
@@ -227,11 +262,12 @@ body {
     font-size: 3.4em;
     font-weight: bold;
     color: #1d1d1b;
-    /* line-height: .2; */
+    /* line-height: 2.2; */
 }
 
 #text1 {
     top: 208vh;
+    left: 55vw;
 }
 
 .pg1 {
@@ -305,25 +341,26 @@ body {
 .P3 {
     position: absolute;
     top: 320vh;
-    right: 5vw;
+    left: 50vw;
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
     font-weight: bold;
     color: #1d1d1b;
     letter-spacing: -0.02em;
+    left: 4vw;
     /* line-height: .2; */
 }
 
 #text2 {
     top: 348vh;
+    left: 8vw;
 }
 
 .pg2 {
     position: absolute;
-    top: 388vh;
     left: 4vw;
-    width: 210px;
-    height: 210px;
+    width: 80px;
+    height: 80px;
 }
 
 .pg2:hover {
@@ -333,36 +370,43 @@ body {
 #img8 {
     background-image: url(../final/final/8.jpg);
     background-size: cover;
+    left: 79vw;
+    top: 342vh;
 }
 
 #img9 {
     background-image: url(../final/final/9.jpg);
     background-size: cover;
-    left: 19vw;
+    left: 79vw;
+    top: 354vh;
 }
 
 #img10 {
     background-image: url(../final/final/10.jpg);
     background-size: cover;
-    left: 34vw;
+    left: 79vw;
+    top: 366vh;
 }
 
 #img11 {
     background-image: url(../final/final/11.jpg);
     background-size: cover;
-    left: 49vw;
+    left: 79vw;
+    top: 378vh;
 }
 
 #img12 {
     background-image: url(../final/final/12.jpg);
     background-size: cover;
-    left: 64vw;
+    left: 79vw;
+    top: 390vh;
 }
 
 #img13 {
     background-image: url(../final/final/13.jpg);
     background-size: cover;
     left: 79vw;
+    top: 402vh;
 }
 
 .hasBeenSelected2 .pg2 {
@@ -374,12 +418,12 @@ body {
 }
 
 #bigImage2 {
-    width: 640px;
-    height: 460px;
+    width: 1300px;
+    height: 620px;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 322vh;
+    top: 332vh;
     left: 4vw;
 }
 
@@ -387,8 +431,8 @@ body {
 /* Aerocene */
 .P4 {
     position: absolute;
-    top: 470vh;
-    right: 10vw;
+    top: 522vh;
+    left: 62vw;
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
     font-weight: bold;
@@ -397,15 +441,16 @@ body {
 }
 
 #text3 {
-    top: 496vh;
+    top: 533vh;
+    left: 62vw;
 }
 
 .pg3 {
     position: absolute;
-    top: 538vh;
-    left: 4vw;
-    width: 210px;
-    height: 210px;
+    /* top: 538vh;
+    left: 4vw; */
+    width: 120px;
+    height: 120px;
 }
 
 .pg3:hover {
@@ -415,36 +460,43 @@ body {
 #img15 {
     background-image: url(../final/final/15.jpg);
     background-size: cover;
+    left: 62vw;
+    top: 486vh;
 }
 
 #img16 {
     background-image: url(../final/final/16.jpg);
     background-size: cover;
-    left: 19vw;
+    left: 62vw;
+    top: 504vh;
 }
 
 #img17 {
     background-image: url(../final/final/17.jpg);
     background-size: cover;
-    left: 34vw;
+    left: 72vw;
+    top: 486vh;
 }
 
 #img18 {
     background-image: url(../final/final/18.jpg);
     background-size: cover;
-    left: 49vw;
+    left: 72vw;
+    top: 504vh;
 }
 
 #img19 {
     background-image: url(../final/final/19.jpg);
     background-size: cover;
-    left: 64vw;
+    left: 82vw;
+    top: 486vh;
 }
 
 #img20 {
     background-image: url(../final/final/20.jpg);
     background-size: cover;
-    left: 79vw;
+    left: 82vw;
+    top: 504vh;
 }
 
 .hasBeenSelected3 .pg3 {
@@ -456,8 +508,8 @@ body {
 }
 
 #bigImage3 {
-    width: 640px;
-    height: 460px;
+    width: 800px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -474,12 +526,14 @@ body {
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
     font-weight: bold;
-    color: #1d1d1b;
+    z-index: 1000000000;
     /* line-height: .2; */
 }
 
 #text4 {
     top: 648vh;
+    left: 6vw;
+    color: red;
 }
 
 .pg4 {
@@ -497,36 +551,48 @@ body {
 #img30 {
     background-image: url(../final/final/30.jpg);
     background-size: cover;
+    border-style: solid;
+    border-color: red;
 }
 
 #img31 {
     background-image: url(../final/final/31.jpg);
     background-size: cover;
+    border-style: solid;
     left: 19vw;
+    border-color: red;
 }
 
 #img32 {
     background-image: url(../final/final/32.jpg);
     background-size: cover;
+    border-style: solid;
     left: 34vw;
+    border-color: red;
 }
 
 #img33 {
     background-image: url(../final/final/33.jpg);
     background-size: cover;
+    border-style: solid;
     left: 49vw;
+    border-color: red;
 }
 
 #img34 {
     background-image: url(../final/final/34.jpg);
     background-size: cover;
+    border-style: solid;
     left: 64vw;
+    border-color: red;
 }
 
 #img35 {
     background-image: url(../final/final/35.jpg);
     background-size: cover;
+    border-style: solid;
     left: 79vw;
+    border-color: red;
 }
 
 .hasBeenSelected4 .pg4 {
@@ -538,17 +604,19 @@ body {
 }
 
 #bigImage4 {
-    width: 640px;
-    height: 460px;
+    width: 1294px;
+    height: 740px;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 622vh;
+    top: 616vh;
     left: 4vw;
 }
 
 
 /*  spider */
+
+
 .P6 {
     position: absolute;
     top: 770vh;
@@ -556,18 +624,19 @@ body {
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
     font-weight: bold;
-    color: #1d1d1b;
+    color: #ffffff;
+    z-index: 10000000000;
     /* line-height: .2; */
 }
 
 #text5 {
-    top: 802vh;
+    top: 832vh;
+    left: 50vw;
+    z-index: 10000000000;
 }
 
 .pg5 {
     position: absolute;
-    top: 838vh;
-    left: 4vw;
     width: 210px;
     height: 210px;
 }
@@ -579,36 +648,43 @@ body {
 #img36 {
     background-image: url(../final/final/36.jpg);
     background-size: cover;
+    top: 772vh;
+    left: 4vw;
 }
 
 #img37 {
     background-image: url(../final/final/37.jpg);
     background-size: cover;
-    left: 19vw;
+    top: 804vh;
+    left: 4vw;
 }
 
 #img38 {
     background-image: url(../final/final/38.jpg);
     background-size: cover;
-    left: 34vw;
+    top: 836vh;
+    left: 4vw;
 }
 
 #img39 {
     background-image: url(../final/final/39.jpg);
     background-size: cover;
-    left: 49vw;
+    top: 772vh;
+    right: 4vw;
 }
 
 #img40 {
     background-image: url(../final/final/40.jpg);
     background-size: cover;
-    left: 64vw;
+    top: 804vh;
+    right: 4vw;
 }
 
 #img42 {
     background-image: url(../final/final/42.jpg);
     background-size: cover;
-    left: 79vw;
+    top: 836vh;
+    right: 4vw;
 }
 
 .hasBeenSelected5 .pg5 {
@@ -620,13 +696,13 @@ body {
 }
 
 #bigImage5 {
-    width: 640px;
-    height: 460px;
+    width: 1020px;
+    height: 744px;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 772vh;
-    left: 4vw;
+    top: 768vh;
+    left: 15vw;
 }
 
 
@@ -635,7 +711,7 @@ body {
 .P7 {
     position: absolute;
     top: 920vh;
-    right: 15vw;
+    left: 8vw;
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
     font-weight: bold;
@@ -645,12 +721,13 @@ body {
 
 #text6 {
     top: 950vh;
+    left: 8vw;
 }
 
 .pg6 {
     position: absolute;
     top: 988vh;
-    left: 4vw;
+    right: 4vw;
     width: 210px;
     height: 210px;
 }
@@ -662,36 +739,38 @@ body {
 #img22 {
     background-image: url(../final/final/22.jpg);
     background-size: cover;
+
 }
 
 #img23 {
     background-image: url(../final/final/23.jpg);
     background-size: cover;
-    left: 19vw;
+    top: 988vh;
+    right: 19vw;
 }
 
 #img24 {
     background-image: url(../final/final/24.jpg);
     background-size: cover;
-    left: 34vw;
+    right: 34vw;
 }
 
 #img25 {
     background-image: url(../final/final/25.jpg);
     background-size: cover;
-    left: 49vw;
+    right: 49vw;
 }
 
 #img26 {
     background-image: url(../final/final/26.jpg);
     background-size: cover;
-    left: 64vw;
+    right: 64vw;
 }
 
 #img28 {
     background-image: url(../final/final/28.jpg);
     background-size: cover;
-    left: 79vw;
+    right: 79vw;
 }
 
 .hasBeenSelected6 .pg6 {
@@ -709,5 +788,5 @@ body {
     background-repeat: no-repeat;
     position: absolute;
     top: 922vh;
-    left: 4vw;
+    right: 4vw;
 }

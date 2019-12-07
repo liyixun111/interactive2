@@ -53,12 +53,12 @@ let titles = document.querySelectorAll('.homeTitle')
 console.log(titles)
 
 let lookPositions = [
-    'rotate3d(0, 1, 0, 180deg)',
-    'rotate3d(0, 1, 0, 270deg)',
-    'rotate3d(0, 1, 0, 90deg)',
-    'rotate3d(0, 1, 0, 0deg)',
-    'rotate3d(0, -1, 1, 180deg)',
-    'rotate3d(0, -1, 1, 180deg)'
+    'rotate3d(1.2, 1, 0.2, 180deg)',
+    'rotate3d(0.4, 1, 0.2, 270deg)',
+    'rotate3d(0, 1, 0.2, 90deg)',
+    'rotate3d(0, 1, 0, 20deg)',
+    'rotate3d(0, -1, 0.6, 180deg)',
+    'rotate3d(0, -1, 1.6, 180deg)'
 ]
 
 
