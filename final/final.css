@@ -6,7 +6,7 @@ body {
     perspective: 1000px;
     perspective-origin: 50vw 50vh;
     background-color: #C7C6C6;
-    height: 1020vh;
+    height: 1016vh;
 
 }
 
@@ -710,7 +710,7 @@ body {
 /*  hybrid */
 .P7 {
     position: absolute;
-    top: 920vh;
+    top: 940vh;
     left: 8vw;
     font-family: 'avenir', sans-serif;
     font-size: 3.4em;
@@ -720,7 +720,7 @@ body {
 }
 
 #text6 {
-    top: 950vh;
+    top: 954vh;
     left: 8vw;
 }
 
